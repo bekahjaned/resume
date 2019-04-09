@@ -1,0 +1,359 @@
+/* stylesheet */
+
+.emphasized-section{
+  background-color: #84C7D0/*#FF8C42 /*#FF9B85*/;
+  /*background: url('https://images.unsplash.com/photo-1511689774932-3aca18459e68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80');
+  background-position: cover;
+  background-attachment: fixed;*/
+  color: white;
+  padding: 0px, 5px;
+  margin: 0px, 5px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px, 5px;
+  margin: 0px, 5px;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  padding: 5px;
+}
+
+body{
+  font-family: 'Overpass', sans-serif;
+  margin: 0px;
+}
+
+body p::selection{
+  color: #FF8C42;
+}
+
+body li::selection{
+  color: #FF8C42;
+}
+
+h1{
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+h2{
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+h3{
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+h4{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+h5, span{
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+p, li, a{
+  font-size: 16px;
+}
+
+header a{
+  text-transform: uppercase;
+  color: white
+  /* font-decoration: none; */
+}
+
+.menu{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+
+.menu-link{
+  margin-right: 10px;
+  transition: color 2s linear 250ms;
+  /*the long way of doing it (below)
+  transition-property: color;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 250ms;*/
+}
+
+.menu-link:hover{
+  color: black;
+  /*font-size: 12px;*/
+}
+
+.id-container p::first-letter{
+  font-weight: 900;
+}
+
+#name-and-title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+}
+
+#name-and-title div{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+#skills .skill-meter {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin: 10px 0px;
+}
+
+#skills meter{
+  width: 25px;
+  height: 15px;
+  padding-right: 10px;
+  flex: 2;
+}
+
+meter::-webkit-meter-bar{
+  border-radius: 5px;
+}
+
+meter::-webkit-meter-optimum-value{
+  background: white;
+}
+
+#skills{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.skill-meter{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+}
+
+.skill{
+  padding-right: 10px;
+  flex: 1;
+}
+
+.experience-entry{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.date-and-job{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  height: 60px;
+}
+
+.company-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.date{
+  text-align: right;
+  padding-right: 10px;
+  flex: 1;
+}
+
+.company-name{
+  text-align: right;
+  padding-right: 10px;
+  flex: 1;
+}
+
+.job{
+  flex: 3;
+}
+
+.company-duties{
+  flex: 3;
+}
+
+footer a{
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+
+@keyframes rotate {
+  0% {
+    background-color: #2F0147;
+  }
+  25% {
+    background-color: #FFB7C3;
+  }
+  75% {
+    background-color: #BCF4F5;
+  }
+}
+
+.resume-button a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.resume-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 15px;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  transition: background-color 2s ease-in-out;
+}
+
+footer{
+  /*background-color: #303633 /*#ACB0BD #89023E #462255*/
+  /*background: linear-gradient(to left, blue, red);*/
+  /*background: linear-gradient(45deg, blue, red);*/
+  background: linear-gradient(45deg, #8D5A97, 75%, #84C7D0);
+  color: white;
+}
+
+#recipe-pics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1em) and (max-width: 50em) {
+  body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+    margin: 0rem, 1rem;
+  }
+
+  .emphasized-section{
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+    margin: 0rem, 1rem;
+  }
+
+  .container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+  margin: 0rem, 1rem;
+  }
+
+  .menu{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  #name-and-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+  }
+  img{
+/*  display: flex;
+    align-self: center;*/
+    width: 25%;
+    height: auto;
+    padding: 1rem;
+
+  }
+  h1{
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+  h2{
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  h3{
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+  h4{
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+  h5, span{
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  p, li, a{
+    font-size: 12px;
+  }
+  #skills #experience .container{
+  width: 100%;
+  height: auto;
+  }
+  footer{
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+    margin: 0rem, 1rem;
+  }
+
+}
